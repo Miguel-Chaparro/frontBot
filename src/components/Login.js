@@ -5,7 +5,7 @@ import { Link, Redirect } from "react-router-dom";
 
 export const connect = async (username, password) => {
   //var tokenset = false;
-  var token = "";
+  
   const data = {
     Correo: username,
     Clave: password,
@@ -23,7 +23,7 @@ export const connect = async (username, password) => {
       console.log(error);
     })
     .then(() => {
-      token = localStorage.getItem("Session");
+      
     });
   //}
   return token;

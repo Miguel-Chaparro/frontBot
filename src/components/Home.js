@@ -3,8 +3,7 @@ import axios from "axios";
 import Carts from "./Carts";
 import Sub from "./Sub";
 import "../css/styles-carts.css";
-import { Link, Redirect } from "react-router-dom";
-import ListCS from "./ListCS";
+import { Redirect } from "react-router-dom";
 const Home = () => {
   const [libros, setLibros] = useState([]);
   let status = {};
