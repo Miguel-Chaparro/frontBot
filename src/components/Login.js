@@ -26,7 +26,7 @@ export const connect = async (username, password) => {
       
     });
   //}
-  return token;
+  return localStorage.getItem("Session", e.data.Value) || "";
 };
 
 const Login = (t) => {
